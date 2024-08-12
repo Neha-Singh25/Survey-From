@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css" />
+  <title>AnyPlatformName Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">AnyPlatformName Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+      <label id="number-label">Age (optional) <input type="number" id="number" placeholder="Age" min="13"
+          max="120"></label>
+      <label for="dropdown">Which option best describes your current role?
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend AnyPlatformName to a friend?</legend>
+      <input class="inline" type="radio" value="def" name="recom" checked>Definitely
+      <input type="radio" value="may" class="inline" name="recom">May be
+      <input type="radio" value="not" class="inline" name="recom">Not Sure
+      <label for="choice">What is your favorite feature of AnyPlatformName?
+        <select id="choice">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <input type="checkbox" class="inline" value="fp">Front-end Projects<br>
+      <input type="checkbox" class="inline" value="bp">Back-end Projects<br>
+      <input type="checkbox" class="inline" value="dv">Data Visualization<br>
+      <input type="checkbox" class="inline" value="cc">Challenges<br>
+      <input type="checkbox" class="inline" value="os">Open Source Community
+      <br>
+      <input type="checkbox" class="inline" value="gh">Gitter help rooms<br>
+      <input type="checkbox" class="inline" value="vi">Videos<br>
+      <input type="checkbox" class="inline" value="cm">City Meetups<br>
+      <input type="checkbox" class="inline" value="wi">Wiki<br>
+      <input type="checkbox" class="inline" value="fo">Forum<br>
+      <input type="checkbox" class="inline" value="add">Additional Courses
+
+      <label>Any comments or suggestions?</label>
+      <textarea placeholder="Enter your Comment here..."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+
+</html>
